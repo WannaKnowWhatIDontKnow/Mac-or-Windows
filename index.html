@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Macbook vs Windows</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                text-align: center;
+                margin: 0;
+                padding: 0;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            h1 {
+                margin: 0;
+                position: absolute;
+                top: 30%;
+                left: 50%
+                transform: translate(-50%, -50%);
+                font-size: 2rem;
+            }
+
+            #content {
+                margin-top: 200px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+            }
+
+            button, input[type="text"] {
+                display: inline-block;
+                padding: 10px;
+                margin: 10px auto;
+                font-size: 16px;
+            }
+            #result, #question {
+                margin-top: 20px;
+                font-weight: bold;
+            }
+
+            #options {
+                margin-top: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Macbook vs Windows</h1>
+        <p>Please click on the button below:</p>
+        <button id="startButton">Let's find out</button>
+        <div id="question"></div>
+        <div id="options"></div>
+        <button id="retry" style="display: none;">Try again</button>
+        <div id="result"></div>
+        <script src="script.js"></script>
+    </body>
+    </html>
